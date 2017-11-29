@@ -6,7 +6,7 @@
 name: Pablo Arias
 
 # Short bio or description (displayed in the header)
-description: About the little I know
+description: About the Little I Know
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/20794509
@@ -19,7 +19,7 @@ avatar: https://avatars0.githubusercontent.com/u/20794509
 footer-links:
   dribbble:
   email: pabloariasal@gmail.com
-  facebook: pabloariasal
+  facebook:
   flickr:
   github: pabloariasal
   instagram: pabloariasal
@@ -34,10 +34,10 @@ footer-links:
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: pabloariasal
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+google_analytics: UA-110411218-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
