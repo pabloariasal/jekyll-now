@@ -10,9 +10,13 @@ This blog documents an array of interesting topics that stumble accross in my jo
 Even though my main goal is to teach myself, my hope is that you may take one thing or two. 
 My main topics of interest are computer vision, machine learning and IT security.
 
-I love dogs and football. This is my dog Nova:
+I love dogs and football. This is Nova:
 
-![nova]({{ site.baseurl }}/images/nova.jpeg "nova")
+![nova]({{ site.baseurl }}/images/about/nova.jpeg "nova")
+
+And her daughter Terra: 
+
+![terra]({{ site.baseurl }}/images/about/terra.jpg "terra")
 
 Feel free to hit me up via email or instagram.
 
