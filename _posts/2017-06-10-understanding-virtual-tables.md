@@ -11,7 +11,7 @@ In this context, dispatching just refers to the action of finding the right func
 
 Consider the following example:
 
-```cpp
+{% highlight cpp %}
 #include <iostream>
 
 class A
@@ -24,7 +24,7 @@ void A::foo()
 {
   std::cout << "Hello this is foo" << std::endl;
 }
-```
+{% endhighlight %}
 
 Here, the compiler will create a routine for `foo()` and remember its address. This routine will be executed every time the compiler finds a call to `foo()` on an instance of `A`. Keep in mind that only one routine exists per class method, and is shared by all instances of the class. This process is known as _static dispatch_ or _early binding_: the compiler knows which routine to execute during compilation.
 
@@ -32,7 +32,7 @@ Here, the compiler will create a routine for `foo()` and remember its address. T
 
 Well, there are cases where it is not possible for the compiler to know which routine to execute at compile time. This is the case, for instance,  when we declare virtual functions:
 
-```cpp
+{% highlight cpp %}
 #include <iostream>
 
 class B
@@ -51,11 +51,11 @@ void B::qux()
 {
   std::cout << "This is B's implementation of qux" << std::endl;
 }
-```
+{% endhighlight %}
 
 The thing about virtual functions is that they can be overriden by subclasses:
 
-```cpp
+{% highlight cpp %}
 class C : public B
 {
 public:
@@ -66,13 +66,13 @@ void C::bar()
 {
   std::cout << "This is C's implementation of bar" << std::endl;
 }
-```
+{% endhighlight %}
 
 Now consider the following call to `bar()`:
-```cpp
+{% highlight cpp %}
 B* b = new C();
 b->bar();
-```
+{% endhighlight %}
 
 If we use static dispatch as above, the call `b->bar()` would execute `B::bar()`, since (from the point of view of the compiler) b points to an object of type `B`. This would be horribly wrong, off course, because b actually points to an object of type `C` and `C::bar()` should be called instead.
 
@@ -110,7 +110,7 @@ Hopefully you have grasped how dynamic function dispatch can be implemented by u
 
 By now it should also be clear why it is always a good idea to make destructors of base classes virtual. Since derived classes are often handled via base class references, declaring a non-virtual destructor will be dispatched statically, obfuscating the destructor of the derived class:
 
-```cpp
+{% highlight cpp %}
 #include <iostream>
 
 class Base
@@ -145,7 +145,7 @@ int main()
   Base* p = new Derived(5);
   delete p;
 }
-```
+{% endhighlight %}
 
 This will output:
 > Destroying base
