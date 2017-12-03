@@ -6,10 +6,10 @@ permalink: /about/
 
 Hola! My name is Pablo and I've been writing software for about seven years. 
 My daily life requires that I remain curious; in a constant state of learning. 
-This blog documents an array of interesting topics that I have stumbled across in my journey as a software engineer. 
+This blog studies an array of interesting topics that I have stumbled across in my journey as a software engineer. 
 Even though the main goal is to document for my future reference, my hope is that you may learn one thing or two. 
 My main topics of interest are computer vision, machine learning and IT security.
-I'm currently Based in Munich, Germany. 
+I'm currently based in Munich, Germany. 
 
 I love football, beer and dogs, specially my old buddy Nova:
 

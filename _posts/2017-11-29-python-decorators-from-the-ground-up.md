@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Python Decorators From the Ground Up
+comments: true
 ---
 
 Decorators are your friends. Despite this they tend to be seen as a rather obscure feature and are often left horribly neglected.
@@ -317,7 +318,7 @@ Request took 2.0s
 Matching entries found: []
 {% endhighlight %}
 
-Voila. That's it. We have covered the basics of python decorators and hopefully you are now convinced of how simple and useful they are. This is not the end, tho, there is more stuff you can do can do with decorators that I didn't tell you. Most importantly, you can add extra generalization to your decorators by passing arguments to them:
+Voila. That's it. We have covered the basics of python decorators and hopefully you are now convinced of how simple and useful they are. This is not the end of it, though, there is more stuff you can do with decorators. Most importantly, you can add extra generalization to your decorators by passing arguments to them:
 
 {% highlight python %}
 @time('seconds')
@@ -329,8 +330,8 @@ def gardener_lookup(search_criteria):
     pass
 {% endhighlight %}
 
-Here, for instance, we wrote a generic timer decorator that receives the measure unit as argument. This lets us log the hottie lookup in seconds and the gardener lookup in milliseconds, all by using a single decorator.
-Decorators with arguments are out of the scope of this post, however, if you are curious and have been liking my writing so far, leave a comment and maybe I'll write a follow up.
+Here, for instance, we wrote a generic timer decorator that receives the time unit to measure as argument. This lets us time the hottie lookup in seconds and the gardener lookup in milliseconds, all by using a single decorator.
+Decorators with arguments are out of the scope of this post, but if you are curious and have liked this post, leave me  a comment and maybe I'll write a follow up post.
 
 # Wrapping Up
 
